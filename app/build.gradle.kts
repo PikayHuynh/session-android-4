@@ -28,8 +28,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
@@ -43,6 +43,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    implementation("androidx.room:room-runtime:2.6.2")
-    annotationProcessor("androidx.room:room-compiler:2.6.2")
+    implementation("androidx.room:room-runtime:2.7.0")
+    annotationProcessor("androidx.room:room-compiler:2.7.0")
 }

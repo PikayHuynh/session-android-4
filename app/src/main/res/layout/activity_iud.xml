@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ActivityIUD">
+
+    <Button
+        android:id="@+id/btn_exit_iud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="142dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_iud" />
+
+    <Button
+        android:id="@+id/btn_save_iud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="153dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/btn_exit_iud"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_iud" />
+
+    <Button
+        android:id="@+id/btn_delete_iud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="153dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/btn_save_iud"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_iud" />
+
+    <Button
+        android:id="@+id/btn_choose_iud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="95dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_logo_iud"
+        app:layout_constraintTop_toBottomOf="@+id/edt_capacity_iud" />
+
+    <ImageView
+        android:id="@+id/img_logo_iud"
+        android:layout_width="128dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_capacity_iud"
+        app:srcCompat="@drawable/java" />
+
+    <EditText
+        android:id="@+id/edt_name_iud"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Nhập tên đội bóng"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_uid" />
+
+    <EditText
+        android:id="@+id/edt_stadium_iud"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Nhập tên sân"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name_iud" />
+
+    <EditText
+        android:id="@+id/edt_capacity_iud"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Nhập sức chứa"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_stadium_iud" />
+
+    <TextView
+        android:id="@+id/tv_title_uid"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/design_default_color_primary"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
